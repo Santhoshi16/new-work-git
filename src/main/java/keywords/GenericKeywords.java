@@ -152,6 +152,11 @@ public class GenericKeywords {
     	 test.log(Status.INFO, msg);
      }
      
+     public void skipTest(String skipMsg) {
+    	 System.out.println(skipMsg);
+    	 test.log(Status.SKIP, skipMsg);
+     }
+     
      public void reportFailure(String failureMsg, boolean stopOnFailure) {
  		System.out.println(failureMsg);
           test.log(Status.FAIL, failureMsg); //fail in extent reports
